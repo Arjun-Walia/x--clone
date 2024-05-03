@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X. it's what's happening/ X</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/x.png">
+
+</head>
+
+<body class="body">
+    <div id="overlay">
+        <div class="box1">
+            <img src="images/x2.png" alt="logo" width="350px">
+        </div>
+        <div class="box2">
+            <span class="one">Happening now
+            </span>
+            <span class="two">
+                Join today.
+            </span>
+            <button id="google"> <img src="images/google.png" width="20px"><span> Sign up with google</span></button>
+            <button id="apple"> <img src="images/apple.jpeg" width="20px"><span> Sign up with apple</span></button>
+            <p class="line">
+                ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ or ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+            </p>
+            <button id="login" onclick="openDialog1()"><span> Create account</span></button>
+            <p class="terms"> By signing up, you agree to the <a href="">Terms of Service </a> and <a href="">Privacy
+                    <br>
+                    Policy</a>,including <a href="">Cookie Use</a>.
+            </p>
+            <p class="signin">Already have an account?</p>
+            <button id="signin" onclick="openDialog2()"> Sign in </button>
+        </div>
+        <footer class=" foot">
+            <a href=""><span>About</span></a>
+            <a href="">Download the X app</a>
+            <a href="">Help Center</a>
+            <a href="">Terms of Service</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Cookie Policy</a>
+            <a href="">Accessibility</a>
+            <a href="">Ads info</a>
+            <a href="">Blog</a>
+            <a href="">Status</a>
+            <a href="">Careers</a>
+            <a href="">Brand Resources</a>
+            <a href="">Advertising</a>
+            <a href="">Marketing</a>
+            <a href="">X for Business</a><br>
+            <div class="toes">
+                <a href="">Developers</a>
+                <a href="">Directory</a>
+                <a href="">Settings</a>
+                <span>© 2024 X Corp.</span>
+            </div>
+        </footer>
+    </div>
+    <div id="loginbox" class="loginbox">
+        <div class="modal-content">
+            <span class="close" onclick="closeDialog1()">&times;</span>
+            <img src="images/x2.PNG" alt="x" width="30px">
+            <h4>Create your account</h4>
+            <input type="text" placeholder="Name" class="input1" id="input1">
+            <input type="text" placeholder="Phone" class="input2" id="input2"><br>
+            <a href="">Use email instead</a>
+            <h5>Date of birth</h6>
+                <p>This will not be shown publicly. Confirm your own age, even if this <br>account is for a
+                    business, a
+                    pet, or something else.</p>
+                <select name="Month" class="input3" id="month" onclick="displayday()">
+                    <option value="jan">January</option>
+                    <option value="feb">February</option>
+                    <option value="march">March</option>
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">June</option>
+                    <option value="jul">July</option>
+                    <option value="aug">August</option>
+                    <option value="sep">September</option>
+                    <option value="oct">October</option>
+                    <option value="nov">November</option>
+                    <option value="dec">December</option>
+                </select>
+                <select class="input4" id="day"></select>
+                <select id="year" class="input5" onclick="displayyear()"></select>
+                <button id="next" disabled>Next</button>
+        </div>
+    </div>
+    <div id="signinbox" class="signinbox">
+        <div class="modal-content">
+            <span class="close" onclick="closeDialog2()">&times;</span>
+            <img src="images/x2.PNG" alt="x" width="30px">
+            <span class="text">Sign in to X</span>
+            <button id="google2"> <img src="images/google.png" width="20px"><span> Sign up with google</span></button>
+            <button id="apple2"> <img src="images/apple.jpeg" width="20px"><span> Sign up with apple</span></button>
+            <p class="line2">
+                ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ or ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+            </p>
+            <input type="text" id="phone" placeholder="Phone,email or username">
+            <button id="next2">Next</button>
+            <button id="fpass">Forgot password ?</button><br>
+            <span class="signn">Don't have an account ? <a href="">Sign up</a></span>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
